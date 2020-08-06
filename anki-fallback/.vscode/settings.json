@@ -1,0 +1,7 @@
+{
+  "python.formatting.provider": "black",
+  "files.exclude": {
+    "**/node_modules/": true,
+    "**/.DS_Store": true
+  }
+}
