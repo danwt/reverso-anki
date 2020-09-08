@@ -3,8 +3,10 @@ import json
 from random import shuffle
 
 
+import sys
 DOWNLOADS = "/Users/dan/Downloads"
-TAKE = 2
+TAKE = int(sys.argv[1])
+print("Taking: ", TAKE)
 MAX_SENTENCE_LENGTH = 106
 
 
