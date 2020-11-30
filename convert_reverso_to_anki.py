@@ -14,6 +14,10 @@ def sanitize(s):
     return s.replace("@", "").replace("\n", "").replace("\r", "")
 
 
+def italicize(sentence,word):
+    
+
+
 def generate_filename(lang):
     return f"{DOWNLOADS}/anki_importable_result_{lang}"
 
@@ -24,7 +28,7 @@ def handle_file(lines, data):
     to_append = []
     for card in sentences:
         if len(card["front"]) < MAX_SENTENCE_LENGTH:
-            line = sanitize(card["front"]) + "@" + sanitize(card["back"])
+            line = sanitize(italicize(card["front"],word)) + "@" + sanitize(card["back"])
             to_append.append(line)
     to_append.sort(key=lambda x: len(x))
     lines += to_append[:TAKE]
