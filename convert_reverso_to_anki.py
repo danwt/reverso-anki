@@ -4,7 +4,7 @@ from random import shuffle
 
 
 import sys
-DOWNLOADS = "/Users/dan/Downloads"
+DOWNLOADS = "/home/dan/Downloads"
 TAKE = int(sys.argv[1])
 print("Taking: ", TAKE)
 MAX_SENTENCE_LENGTH = 106
@@ -15,6 +15,8 @@ def sanitize(s):
 
 
 def italicize(sentence,word):
+    # TODO: italicize -> need to lookup anki italicization syntax
+    return sentence
     
 
 
