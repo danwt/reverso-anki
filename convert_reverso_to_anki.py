@@ -19,7 +19,6 @@ def italicize(sentence,word):
     return sentence
     
 
-
 def generate_filename(lang):
     return f"{DOWNLOADS}/anki_importable_result_{lang}"
 
