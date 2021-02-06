@@ -1,0 +1,26 @@
+{
+	"name": "Reverso context downloader",
+	"description": "It can download sentences and their translations from reverso context",
+	"version": "0.1",
+	"permissions": [ "contextMenus", "storage", "downloads", "<all_urls>", "declarativeContent", "activeTab" ],
+	"content_scripts": [
+		{
+			"matches": [ "https://*.reverso.net/translation/*" ],
+			"js": [ "content.js" ]
+		}
+	],
+	"background": {
+		"persistent": false,
+		"scripts": [ "background.js" ]
+	},
+	"icons": {
+		"16": "images/icon16.png",
+		"32": "images/icon32.png",
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"browser_action": {
+		"default_title": "Reverso contenxt download title"
+	},
+	"manifest_version": 2
+}
